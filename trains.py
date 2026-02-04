@@ -20,3 +20,4 @@ while True:
 
     elif current_command == "End":
         print(number_of_trains)
+        break
