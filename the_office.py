@@ -4,7 +4,7 @@ def happiness_calc(list_, factor_):
     average_happiness = sum(happiness_multiplied) / len(happiness_multiplied)
     happy_employees = [num for num in happiness_multiplied if num >= average_happiness]
 
-    if len(happy_employees) >= 3:
+    if len(happy_employees) >= len(happiness_multiplied) / 2:
         return f"Score: {len(happy_employees)}/{len(list_)}. Employees are happy!"
     else:
         return f"Score: {len(happy_employees)}/{len(list_)}. Employees are not happy!"

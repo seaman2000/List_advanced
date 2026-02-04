@@ -1,6 +1,6 @@
 list_of_numbers = input().split(", ")
 
 even_numbers_list = list(map(int, list_of_numbers))
-result = filter(lambda x: x % 2 == 0, even_numbers_list)
+even_number_indices = [idx for idx in range(len(even_numbers_list)) if even_numbers_list[idx] % 2 == 0]
 
-print(list(result))
+print(even_number_indices)
